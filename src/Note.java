@@ -1,13 +1,13 @@
 public class Note{
     //id getter and setter
-    private int id;
+    private String id;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(String id) {
+        id = id;
     }
     //getter and setter title
     private String Title;
@@ -29,8 +29,8 @@ public class Note{
     }
 
     //constructor
-    public Note(int id, String title, String content) {
-        this.id = id;
+    public Note(String id, String title, String content) {
+        id = id;
         Title = title;
         Content = content;
     }
