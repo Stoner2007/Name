@@ -10,7 +10,7 @@ public class Main {
 
 
         System.out.println("What id do you want your branch to have?");
-        int ID = scanner.nextInt();
+        String ID = scanner.next();
         System.out.println("Title: ");
         String TITLE = scanner.next();
         System.out.println("Content: ");
@@ -29,6 +29,15 @@ public class Main {
             System.out.println("See you next time!");
         }
 
+
+        System.out.println("Do you want to delete a note?");
+        String answer2 = scanner.next();
+        if(answer2 == "yes"){
+            System.out.println("Which note do you want to delete? Give id");
+            String ID2 = scanner.next();
+        } else {
+            System.out.println("Goodbye");
+        }
 
     }
 }
